@@ -1,4 +1,13 @@
-This is your new Play application
-=================================
+#Asset Fingerprinting issues in Play 2.3
+=======================================
 
-This file will be packaged with your application, when using `activator dist`.
+The point of this "Hello World" app is to show the problem that occur when testing asset fingerprinting in development mode.
+
+The following asset pipeline works when running in production mode:
+'''
+pipelineStages := Seq(rjs, digest)
+'''
+The following asset pipeline throws a Boxed Error exception when running in development mode:
+'''
+pipelineStages in Assets := Seq(rjs, digest)
+'''
