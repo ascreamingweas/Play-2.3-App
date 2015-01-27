@@ -1,4 +1,4 @@
-name := """playApp"""
+name := """playAppAssetPipeline"""
 
 version := "1.0-SNAPSHOT"
 
