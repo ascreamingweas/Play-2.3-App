@@ -1,0 +1,1 @@
+console.log "Welcome to Hello World Play App!"  if window.console
